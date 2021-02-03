@@ -55,3 +55,13 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+
+
+
+
+
+### Need to perform
+When i make change in slider from slider section it should reflect to the right section
+i need to perform more task as get triggred in right section
+left section in maid toggle the data selected
