@@ -1,0 +1,18 @@
+.left-section {
+  position: absolute;
+  top: 40px;
+  width: 250px ;
+  background-color:aliceblue;
+  padding: 10px;
+}
+
+.timeline__slider {
+  width: 300px;
+  bottom: 50px;
+  position: absolute;
+  background: gray;
+}
+
+.timeline__slider .bottom-range {
+  margin: 10px;
+}

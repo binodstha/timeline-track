@@ -1,0 +1,24 @@
+<div class="timeline__slider">
+
+<div class="bottom-range">
+  <div class="range-inner">
+    <div class="slider-contents">
+      {{log this.start}}
+      {{log this.range}}
+      <div class="sliders">
+        {{range-slider start=this.start
+        range=this.range
+        connect= true
+        step=this.step
+        on-change=(action "changedAction")
+        }}
+      </div>
+    </div>
+    <div class="year-range">
+      <span class="year-start">{{this.startText.[0]}}</span>
+
+      <span class="year-end">{{this.startText.[1]}}</span>
+    </div>
+  </div>
+</div>
+</div>

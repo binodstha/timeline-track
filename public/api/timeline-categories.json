@@ -1,0 +1,169 @@
+{
+  "data": [
+    {
+      "type": "timeline-category",
+      "id": "6",
+      "attributes": {
+        "parent-id": 0,
+        "name": "Disaster",
+        "position": 1,
+        "slug": "disaster"
+      },
+      "relationships": {
+        "timeline": {
+          "data": [
+            {
+              "type": "timeline",
+              "id": "6"
+            }
+          ]
+        },
+        "subcategory": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "timeline-category",
+      "id": "8",
+      "attributes": {
+        "parent-id": 0,
+        "name": "Population",
+        "position": 3,
+        "slug": "population"
+      },
+      "relationships": {
+        "timeline": {
+          "data": [
+            {
+              "type": "timeline",
+              "id": "7"
+            }
+          ]
+        },
+        "subcategory": {
+          "data": []
+        }
+      }
+    }
+  ],
+  "included": [
+    {
+      "type": "timeline",
+      "id": "6",
+      "attributes": {
+        "name": "Nepal EQ History",
+        "tbl-name": "pn_npl_nepal_eq_history",
+        "date-attribute": "english_date",
+        "dependency": false,
+        "dependency-dataset": "",
+        "dataset-id": 8,
+        "is-checked": false,
+        "default-style-column": "",
+        "is-geom": true,
+        "feature-type": "pbf",
+        "geom-type": "ST_Point",
+        "zoom": 6,
+        "min-zoom": 1,
+        "max-zoom": 20,
+        "start_zoom_geojson": 0,
+        "label-zoom": 10,
+        "show-label": false,
+        "response-type": "geojson",
+        "mbtile-attribute": "english_date,nepali_date,local_time,utc_time,magnitude,remarks,epicenter,year,admin2_code,english_date",
+        "style": [
+          {
+            "type": "default",
+            "column_name": "",
+            "style": {
+              "weight": "1",
+              "fill": true,
+              "color": "#000000",
+              "fillColor": "#000000",
+              "opacity": "1",
+              "fillOpacity": "0.4",
+              "radius": "5"
+            },
+            "style_group": []
+          }
+        ],
+        "filter": [
+          {
+            "id": 16,
+            "name": "Eng Date",
+            "slug": "filter-8-eng date-timeline",
+            "type": "daterange",
+            "filter_data": {
+              "min": "1994-06-25",
+              "max": "2018-08-24"
+            },
+            "dataset_type": "timeline",
+            "filter_column": "english_date",
+            "filter_from_column": false,
+            "position": 1,
+            "range_type": "double",
+            "display_type": "yearly"
+          }
+        ]
+      }
+    },
+    {
+      "type": "timeline",
+      "id": "7",
+      "attributes": {
+        "name": "Population",
+        "tbl-name": "pn_npl_nepal_population_parsed",
+        "date-attribute": "year_ad",
+        "dependency": true,
+        "dependency-dataset": "pn_npl_admin2",
+        "dataset-id": 21,
+        "is-checked": true,
+        "default-style-column": "",
+        "is-geom": false,
+        "feature-type": "pbf",
+        "geom-type": null,
+        "zoom": 6,
+        "min-zoom": 1,
+        "max-zoom": 20,
+        "start_zoom_geojson": 0,
+        "label-zoom": 10,
+        "show-label": false,
+        "response-type": "geojson",
+        "mbtile-attribute": "year_ad,year_bs,admin2,admin2_code",
+        "style": [
+          {
+            "type": "default",
+            "column_name": "",
+            "style": {
+              "weight": "1",
+              "fill": true,
+              "color": "#000000",
+              "fillColor": "#000000",
+              "opacity": "1",
+              "fillOpacity": "0.5"
+            },
+            "style_group": []
+          }
+        ],
+        "filter": [
+          {
+            "id": 18,
+            "name": "Pop cencus",
+            "slug": "filter-21-popcencus-timeline",
+            "type": "daterange",
+            "filter_data": {
+              "min": "1971-01-01",
+              "max": "2011-01-01"
+            },
+            "dataset_type": "timeline",
+            "filter_column": "year_ad",
+            "filter_from_column": false,
+            "position": 1,
+            "range_type": "double",
+            "display_type": "yearly"
+          }
+        ]
+      }
+    }
+  ]
+}

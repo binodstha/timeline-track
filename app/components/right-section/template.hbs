@@ -1,0 +1,5 @@
+{{#each timelineList as |timeline|}}
+  {{#if timeline.isChecked}}
+    <RightSection::TimelineSection @timeline={{timeline}} />
+  {{/if}}
+{{/each}}

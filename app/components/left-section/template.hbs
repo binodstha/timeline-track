@@ -1,0 +1,16 @@
+<div class="left-section">
+{{#each this.timelineCategory as |timelineCat|}}
+  <div class="cat-list">
+    <p>{{timelineCat.name}}</p>
+    {{#each timelineCat.timeline as |timeline|}}
+    <div class="chcklist">
+      <input class="form-check-input" type="checkbox" checked={{timeline.isChecked}} id="timeline-input-{{timeline.id}}"
+      onCLick={{action "timelineChecked" timeline}}>
+    <label class="form-check-label" for="timeline-input-{{timeline.id}}">
+      {{timeline.name}}
+    </label>
+    </div>
+    {{/each}}
+  </div>
+{{/each}}
+</div>

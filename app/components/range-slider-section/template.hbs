@@ -1,0 +1,7 @@
+{{#each this.timelineList as |timeline| }}
+  {{#if timeline.isChecked}}
+      {{#each timeline.dateRangeFilter as |timelineData|}}
+        <RangeSliderSection::SliderSection @filterData={{timelineData}} @timeline={{timeline}} />
+      {{/each}}
+    {{/if}}
+{{/each}}
