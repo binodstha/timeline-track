@@ -1,5 +1,10 @@
-{{#each timelineList as |timeline|}}
+
+<div class="right-section">
+  {{#each this.timelineList as |timeline|}}
   {{#if timeline.isChecked}}
-    <RightSection::TimelineSection @timeline={{timeline}} />
+  {{log timeline}}
+    <p>{{timeline.name}}</p>
+    <RightSection::TimelineSection @timeline={{timeline}} @rangeFilter={{timeline.dateRangeFilter.[0]}}/>
   {{/if}}
 {{/each}}
+</div>

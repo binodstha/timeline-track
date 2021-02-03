@@ -16,3 +16,27 @@
 .timeline__slider .bottom-range {
   margin: 10px;
 }
+
+.right-section{
+  position: absolute;
+  right:  0;
+  top: 70px;
+  width: 300px;
+  height: 200px;
+  background-color: darkgray;
+  padding: 10px;
+}
+
+.right-section .range-dis {
+  display: flex;
+  width: 200px;
+}
+
+.right-section .range-dis div {
+  width: 100px;
+}
+
+.right-section .range-dis div .num {
+  background-color: beige;
+  height: 20px;
+}

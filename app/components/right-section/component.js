@@ -4,6 +4,7 @@ import { inject as service } from '@ember/service';
 export default class RightSectionComponent extends Component {
   @service store;
   get timelineList() {
-    this.store.peekAll('timeline');
+
+    return this.store.peekAll('timeline');
   }
 }
